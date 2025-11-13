@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='assets/apple-icon-180x180.png') }}">
+  <link href="{{ url_for('static', filename='assets/favicon.ico') }}" rel="icon">
+
+  <title>My Works</title>
+
+  <!-- CSS -->
+  <link href="{{ url_for('static', filename='main.3f6952e4.css') }}" rel="stylesheet">
+</head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="{{ url_for('index') }}">01 : Home</a></li>
+          <li><a href="{{ url_for('works') }}" class="active">02 : Works</a></li>
+          <li><a href="{{ url_for('about') }}">03 : About me</a></li>
+          <li><a href="{{ url_for('contact') }}">04 : Contact</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+          <li><a href="{{ url_for('index') }}" class="active">001</a></li>
+          <li><a href="{{ url_for('index') }}">002</a></li>
+          <li><a href="{{ url_for('index') }}">003</a></li>
+          <li><a href="{{ url_for('index') }}">004</a></li>
+          <li><a href="{{ url_for('index') }}">005</a></li>
+          <li><a href="{{ url_for('index') }}">006</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- WORKS SECTION -->
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+
+      <!-- MAIN PROJECT IMAGE -->
+      <div class="col-xs-12">
+        <img src="{{ url_for('static', filename='assets/images/work001-01.jpg') }}"
+             class="img-responsive" alt="Project image">
+
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">Python Automation & Web Development Projects</h1>
+          </div>
+
+          <p>
+            Hi, I'm <strong>Venkatesh Madari</strong> — Python Developer & Instructor.
+            I specialize in Python automation, Flask development, data processing,
+            and teaching real-world programming concepts to students and beginners.
+          </p>
+
+          <p>
+            This project showcases some of the automation tools and web applications I built
+            using Python, Flask, and API integrations. These tools help automate
+            repetitive work, generate reports, process data, and improve efficiency.
+          </p>
+
+          <p><strong>Skills used:</strong></p>
+          <ul>
+            <li>Python (Automation & Scripting)</li>
+            <li>Flask Framework</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>API Integration</li>
+            <li>Data Handling (CSV, Excel, JSON)</li>
+          </ul>
+
+          <blockquote>
+            <p>"Automation is not just coding — it's simplifying life and saving time."</p>
+            <small class="pull-right">— Venkatesh Madari</small>
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- GRID IMAGES -->
+      <div class="col-md-8 col-md-offset-2 section-container-spacer">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <img src="{{ url_for('static', filename='assets/images/work001-02.jpg') }}"
+                 class="img-responsive" alt="">
+            <p>Python Script Output Example</p>
+          </div>
+
+          <div class="col-xs-12 col-md-6">
+            <img src="{{ url_for('static', filename='assets/images/work001-03.jpg') }}"
+                 class="img-responsive" alt="">
+            <p>Dashboard Prototype</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LARGE IMAGE -->
+      <div class="col-xs-12">
+        <img src="{{ url_for('static', filename='assets/images/work001-04.jpg') }}"
+             class="img-responsive" alt="">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>© Venkatesh Madari | Built using Flask & Mashup Template</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    navActivePage();
+  });
+</script>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='main.70a66962.js') }}"></script>
+
+</body>
+</html>

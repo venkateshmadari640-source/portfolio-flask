@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Mashup templates have been developped by Orson.io team" name="author">
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='assets/apple-icon-180x180.png') }}">
+  <link rel="icon"
+        href="{{ url_for('static', filename='assets/favicon.ico') }}">
+
+  <title>Title page</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet"
+        href="{{ url_for('static', filename='main.3f6952e4.css') }}">
+</head>
+
+<body class="minimal">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+
+<!-- Header -->
+<header>
+  <nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+      <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar-collapse"
+              aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="{{ url_for('index') }}">01 : Home</a></li>
+          <li><a href="{{ url_for('works') }}">02 : Works</a></li>
+          <li><a href="{{ url_for('about') }}">03 : About me</a></li>
+          <li><a href="{{ url_for('contact') }}">04 : Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero Image Section -->
+<div class="hero-full-container background-image-container white-text-container"
+     style="background-image: url('{{ url_for('static', filename='assets/images/space.jpg') }}')">
+
+  <img
+    src="{{ url_for('static', filename='assets/images/space.jpg') }}"
+    height="1080" width="1920" />
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="hero-full-wrapper">
+          <div class="text-content">
+            <h1>Hello,<br>
+              <span id="typed-strings">
+                <span>I'm Venkatesh Madari</span>
+                <span>Python Expert</span>
+                <span>Working as an Instructor</span>
+              </span>
+              <span id="typed"></span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    type();
+    movingBackgroundImage();
+  });
+</script>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='main.70a66962.js') }}"></script>
+
+</body>
+</html>

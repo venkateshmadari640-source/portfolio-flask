@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+  <meta content="Portfolio website by Venkatesh Madari" name="author">
+
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='assets/apple-icon-180x180.png') }}">
+  <link href="{{ url_for('static', filename='assets/favicon.ico') }}" rel="icon">
+
+  <title>About Me - Venkatesh Madari</title>
+
+  <!-- CSS -->
+  <link href="{{ url_for('static', filename='main.3f6952e4.css') }}" rel="stylesheet">
+</head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+      <button type="button" class="navbar-toggle collapsed"
+              data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="{{ url_for('index') }}">01 : Home</a></li>
+          <li><a href="{{ url_for('works') }}">02 : Works</a></li>
+          <li><a href="{{ url_for('about') }}" class="active">03 : About me</a></li>
+          <li><a href="{{ url_for('contact') }}">04 : Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ABOUT SECTION -->
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <div class="section-container-spacer text-center">
+          <h1 class="h2">03 : About Me</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+
+            <div class="row">
+
+              <!-- TEXT DETAILS -->
+              <div class="col-xs-12 col-md-6">
+                <h3>Hi, I'm Venkatesh Madari 👋</h3>
+                <p>
+                  I’m a <strong>Python Developer, Instructor, and Tech Enthusiast</strong> passionate about
+                  building automation tools, backend applications, and helping students learn programming effectively.
+                </p>
+
+                <p>
+                  I focus on simplifying complex concepts, building Flask applications, creating automation scripts,
+                  and teaching real-world coding skills.
+                </p>
+
+                <h3>What I Do</h3>
+                <p>
+                  ✔ Python Automation
+                  ✔ Flask Web Applications
+                  ✔ Teaching & Training
+                  ✔ Data Handling (CSV, Excel, JSON)
+                  ✔ Debugging & Problem Solving
+                </p>
+
+                <h3>My Journey</h3>
+                <p>
+                  I started my programming journey with Python and quickly developed a love for automation and backend
+                  logic. Over time, I expanded my skills into Flask, APIs, and web development, helping others learn
+                  these tools through teaching.
+                </p>
+              </div>
+
+              <!-- PROFILE IMAGE -->
+              <div class="col-xs-12 col-md-6">
+                <img src="{{ url_for('static', filename='assets/images/profil.jpg') }}"
+                     class="img-responsive" alt="Profile Photo">
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-container text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>© {{ 2025 }} Venkatesh Madari | Portfolio built using Flask</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+    navActivePage();
+  });
+</script>
+
+<!-- JS -->
+<script src="{{ url_for('static', filename='main.70a66962.js') }}"></script>
+
+</body>
+</html>
